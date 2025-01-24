@@ -45,7 +45,7 @@ function addLetters(){
 
 async function generateWord(){
     try{
-        let words = await fetch("/words.json");
+        let words = await fetch("https://raw.githubusercontent.com/HAMEDESLAM/Hangman-Game/main/words.json");
         let data = await words.json();
         let randint = Math.floor(Math.random() * data.length);
         word = data[randint].words[Math.floor(Math.random() * data.length)];
