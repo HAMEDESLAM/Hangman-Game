@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hangman</title>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h3>Hangman</h3>
+            <div>
+                Category: <span id="category"></span>
+            </div>
+        </header>
+        <div class="hangman-container">
+            <div class="hangman">
+                <div class="hangman-base"></div>
+                <div class="hangman-rod"></div>
+                <div class="hangman-hang">
+                    <div class="hangman-rope"></div>
+                    <div class="hangman-man">
+                        <div class="hangman-head"></div>
+                        <div class="hangman-body">
+                            <div class="hangman-arms"></div>              
+                            <div class="hangman-legs"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="letters">
+
+            </div>
+        </div>
+        <div class="word-container">
+        </div>
+    </div>
+    <div class="endgame-container">
+        <div class="modal">
+            <h2 id="finalMessage">Excellent!</h2>
+            <h3 id="finalMessageRevealWord">
+                The Word was: 
+                "<span>animal</span>"
+            </h3>
+            <button id="playAgainButton">Play Again</button>
+        </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
