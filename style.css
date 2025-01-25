@@ -11,6 +11,8 @@ html{
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    height: 100dvh;
 }
 :root{
     --main-color:#e91e63;
