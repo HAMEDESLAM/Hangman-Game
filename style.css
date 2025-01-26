@@ -247,11 +247,19 @@ body{
     transition: 0.3s;
 }
 .word-container .letter.space{
-    width: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    background-color: transparent;
+    position: relative;
 }
-.word-container .letter.show{
+.word-container .letter.space::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    bottom: 20px;
+    transform: translateY(-50%);
+}
+.word-container .letter.show:not(.space){
     
     height: 40px;
     font-size: 20px;

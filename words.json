@@ -1,42 +1,6 @@
 [
     {
       "category": "Fruits",
-      "words": ["apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "honeydew", "kiwi", "lemon", "mango", "nectarine", "orange"]
-    },
-    {
-      "category": "Animals",
-      "words": ["elephant", "giraffe", "kangaroo", "alligator", "butterfly", "cheetah", "dolphin", "flamingo", "hedgehog", "jaguar", "koala", "penguin", "rhinoceros"]
-    },
-    {
-      "category": "Countries",
-      "words": ["argentina", "brazil", "canada", "denmark", "egypt", "finland", "germany", "hungary", "india", "japan", "kenya", "mexico", "norway"]
-    },
-    {
-      "category": "Colors",
-      "words": ["red", "blue", "green", "yellow", "purple", "orange", "pink", "brown", "black", "white", "grey", "cyan", "magenta"]
-    },
-    {
-      "category": "Sports",
-      "words": ["soccer", "basketball", "tennis", "cricket", "hockey", "baseball", "rugby", "swimming", "volleyball", "golf", "badminton", "cycling", "boxing"]
-    },
-    {
-      "category": "Occupations",
-      "words": ["teacher", "doctor", "engineer", "lawyer", "nurse", "pilot", "chef", "artist", "scientist", "firefighter", "policeman", "architect", "plumber"]
-    },
-    {
-      "category": "Vehicles",
-      "words": ["car", "motorcycle", "bicycle", "airplane", "helicopter", "train", "ship", "submarine", "bus", "truck", "van", "scooter", "jeep"]
-    },
-    {
-      "category": "Planets",
-      "words": ["mercury", "venus", "earth", "mars", "jupiter", "saturn", "uranus", "neptune", "pluto", "moon", "sun", "asteroid", "comet"]
-    },
-    {
-      "category": "Musical Instruments",
-      "words": ["guitar", "piano", "violin", "drum", "flute", "trumpet", "saxophone", "cello", "clarinet", "harmonica", "trombone", "ukulele", "xylophone"]
-    },
-    {
-      "category": "Technology",
-      "words": ["computer", "internet", "smartphone", "tablet", "keyboard", "monitor", "printer", "router", "software", "hardware", "gadget", "laptop", "headphones"]
+      "words": ["apple hi"]
     }
 ]
