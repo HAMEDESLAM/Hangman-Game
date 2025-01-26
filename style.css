@@ -246,6 +246,11 @@ body{
     background-color: black;
     transition: 0.3s;
 }
+.word-container .letter.space{
+    width: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .word-container .letter.show{
     
     height: 40px;

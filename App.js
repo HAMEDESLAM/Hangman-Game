@@ -24,20 +24,20 @@ function addLetters(){
         letter.innerHTML = char;
         letter.id = char;
         letter.addEventListener("click", function(){
-           let check = checkLetter(this.id);
-           if(check.length > 0){
-                check.forEach(index => {
-                     showLetter(index);
-                });
-                this.disabled = true;
-                this.classList.add("correct");
-                (isItAllGuessed()) ? endGame(true) : null;
-           }
-           else{
-                this.classList.add("wrong");
-                this.disabled = true;
-                (drawPartsGenerator.next().done) ? endGame(false) : null;
-           }
+            //checks whether or not the letter is in the word
+            let check = checkLetter(this.id);
+            //disabling the button;
+            this.disabled = true;
+
+            if(check.length > 0){
+                    check.forEach(index => {showLetter(index);});
+                    this.classList.add("correct");
+                    (isItAllGuessed()) ? endGame(true) : null;
+            }
+            else{
+                    this.classList.add("wrong");
+                    (drawPartsGenerator.next().done) ? endGame(false) : null;
+            }
         });
         lettersSection.appendChild(letter);
     }
@@ -52,6 +52,7 @@ async function generateWord(){
         span.innerHTML = data[randint].category;
         for(let i = 0; i < word.length; i++){
             let letter = document.createElement("div");
+            (word[i] === " ") ? letter.classList.add("space") :null;
             letter.classList.add("letter");
             letter.id = i;
             wordContainer.appendChild(letter);
