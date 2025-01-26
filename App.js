@@ -50,10 +50,13 @@ async function generateWord(){
         let randint = Math.floor(Math.random() * data.length);
         word = data[randint].words[Math.floor(Math.random() * data.length)];
         span.innerHTML = data[randint].category;
-        
+
         for(let i = 0; i < word.length; i++){
             let letter = document.createElement("div");
-            (word[i] === " ") ? letter.classList.add("space show") :null;
+            if (word[i] === " "){
+                letter.classList.add("space")
+                letter.classList.add("show")
+            }
             letter.classList.add("letter");
             letter.id = i;
             wordContainer.appendChild(letter);
